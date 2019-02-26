@@ -13,7 +13,7 @@
  * limitations under the License
  */
 
-package com.example.oliver.artistsearch.ui.utils;
+package com.example.oliver.artistsearch.utils;
 
 import android.content.Context;
 import android.net.ConnectivityManager;

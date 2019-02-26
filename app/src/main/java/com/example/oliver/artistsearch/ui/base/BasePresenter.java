@@ -19,7 +19,7 @@ package com.example.oliver.artistsearch.ui.base;
 
 
 import com.example.oliver.artistsearch.data.network.IDataManager;
-import com.example.oliver.artistsearch.ui.utils.rx.SchedulerProvider;
+import com.example.oliver.artistsearch.utils.rx.SchedulerProvider;
 
 import io.reactivex.disposables.CompositeDisposable;
 

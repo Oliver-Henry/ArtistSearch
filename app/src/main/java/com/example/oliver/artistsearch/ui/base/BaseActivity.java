@@ -28,7 +28,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.oliver.artistsearch.R;
-import com.example.oliver.artistsearch.ui.utils.NetworkUtils;
+import com.example.oliver.artistsearch.utils.NetworkUtils;
 
 
 public abstract class BaseActivity extends AppCompatActivity

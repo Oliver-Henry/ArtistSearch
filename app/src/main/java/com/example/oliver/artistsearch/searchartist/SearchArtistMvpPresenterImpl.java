@@ -1,9 +1,9 @@
-package com.example.oliver.artistsearch.search_artist;
+package com.example.oliver.artistsearch.searchartist;
 
 import com.example.oliver.artistsearch.data.network.IDataManager;
 import com.example.oliver.artistsearch.data.network.model.ArtistsModel;
 import com.example.oliver.artistsearch.ui.base.BasePresenter;
-import com.example.oliver.artistsearch.ui.utils.rx.SchedulerProvider;
+import com.example.oliver.artistsearch.utils.rx.SchedulerProvider;
 
 import io.reactivex.disposables.CompositeDisposable;
 import io.reactivex.functions.Consumer;

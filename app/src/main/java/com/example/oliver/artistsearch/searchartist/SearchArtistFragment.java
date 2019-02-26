@@ -1,14 +1,9 @@
-package com.example.oliver.artistsearch.search_artist;
+package com.example.oliver.artistsearch.searchartist;
 
-import android.content.Context;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
@@ -16,12 +11,12 @@ import android.widget.SearchView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.oliver.artistsearch.MainActivity;
+import com.example.oliver.artistsearch.ui.MainActivity;
 import com.example.oliver.artistsearch.R;
 import com.example.oliver.artistsearch.data.network.AppDataManager;
 import com.example.oliver.artistsearch.data.network.model.ArtistsModel;
 import com.example.oliver.artistsearch.ui.base.BaseFragment;
-import com.example.oliver.artistsearch.ui.utils.rx.AppSchedulerProvider;
+import com.example.oliver.artistsearch.utils.rx.AppSchedulerProvider;
 import com.github.pwittchen.reactivenetwork.library.rx2.ReactiveNetwork;
 import com.squareup.picasso.Picasso;
 
@@ -90,6 +85,9 @@ public class SearchArtistFragment extends BaseFragment implements ISearchArtistM
                     @Override
                     public void accept(Boolean connected) throws Exception {
                         if(connected){searchArtistFragmentSearchArtistMvpPresenter.loadArtistList(i);}
+                        else{
+                            Toast.makeText(getActivity(), "No Internet", Toast.LENGTH_LONG).show();
+                        }
                     }
                 });
     }
@@ -128,6 +126,7 @@ public class SearchArtistFragment extends BaseFragment implements ISearchArtistM
     @Override
     public void onFetchDataError(String error) {
         showMessage(error);
+        Toast.makeText(getActivity(), "No Artist Found", Toast.LENGTH_SHORT).show();
     }
 
 

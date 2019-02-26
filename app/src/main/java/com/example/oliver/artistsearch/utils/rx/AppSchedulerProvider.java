@@ -1,4 +1,4 @@
-package com.example.oliver.artistsearch.ui.utils.rx;
+package com.example.oliver.artistsearch.utils.rx;
 
 import io.reactivex.Scheduler;
 import io.reactivex.android.schedulers.AndroidSchedulers;

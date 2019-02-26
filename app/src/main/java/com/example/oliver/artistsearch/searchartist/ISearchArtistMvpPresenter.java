@@ -1,4 +1,4 @@
-package com.example.oliver.artistsearch.search_artist;
+package com.example.oliver.artistsearch.searchartist;
 
 import com.example.oliver.artistsearch.ui.base.MvpPresenter;
 

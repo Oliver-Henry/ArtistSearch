@@ -1,4 +1,4 @@
-package com.example.oliver.artistsearch;
+package com.example.oliver.artistsearch.ui;
 
 
 import android.os.Bundle;
@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.example.oliver.artistsearch.R;
 import com.squareup.picasso.Picasso;
 
 

@@ -1,11 +1,12 @@
-package com.example.oliver.artistsearch;
+package com.example.oliver.artistsearch.ui;
 
 
 import android.support.v4.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import com.example.oliver.artistsearch.search_artist.SearchArtistFragment;
+import com.example.oliver.artistsearch.R;
+import com.example.oliver.artistsearch.searchartist.SearchArtistFragment;
 
 public class MainActivity extends AppCompatActivity {
     private static FragmentManager fragmentManager;
